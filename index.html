@@ -3,79 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/devicon.min.css"/>   
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>   
     <title>Portfolio</title>
 </head>
 <body>
-    <section class="bio">
-        <h1>Mateus Lirmann</h1>
-        <p>Software Developer</p>
-        <p>Hello! My name is Mateus, although I am usually known as Limas. I am a Software Development 
-            student with a strong interest in becoming a full-stack developer in the future. I am 
-            passionate about problem-solving, developing innovative solutions, and exploring the different 
-            approaches that can be used to address challenges.
-            Beyond programming, I am also developing my skills in digital art, which allows me to explore my 
-            creativity and strengthen another area of my interests.
-        </p>
-    </section>
 
-    <section class="projects">
-        <h1>Main Projects</h1>
-        <div>
-            <h2>API Bank</h2>
-            <p>A REST API for managing simple bank operations, built with FastAPI and SQLAlchemy</p>
-            <img src="img/api bank.png" alt="API Bank main page">
-            <button><a href="https://github.com/Mati-Limas/API-Bank" target="_blank">View on GitHub</a></button>
-        </div>
-        <div>
-            <h2>GAS DETECTOR</h2>
-            <p>A cyber-physical system for detecting flammable gas leaks using ESP32 and C++</p>
-            <img src="img/esp32.png" alt="GAS DETECTOR simulation page">
-            <button><a href="https://github.com/Mati-Limas/GAS-DETECTOR" target="_blank">View on GitHub</a></button>
-        </div>
-        <div>
-            <h2>Online Course Website</h2>
-            <p>A responsive website for an online course platform, built from scratch using knowledge of requirements gathering, database management
-                and web development.
+    <main id="main-container">
+        <section class="bio">
+            <h1>Mateus Lirmann</h1>
+            <p>Software Developer</p>
+            <p>Hello! My name is Mateus, although I am usually known as Limas. I am a Software Development 
+                student with a strong interest in becoming a full-stack developer in the future.
+                Beyond programming, I am also developing my skills in digital art, which allows me to explore my 
+                creativity and strengthen another area of my interests.
             </p>
-            <img src="img/hi_teach.jpeg" alt="Online Course Website main page">
-            <button><a href="https://github.com/Odudz/Projeto_Hi-Teach_Underdog" target="_blank">View on GitHub</a></button>
-        </div>
-    </section>
-    <section class="about">
-        <h1>Education and Studies</h1>
-            <div>Education
-                <p>PUCPR - Software Engineering Undergraduation (2026-2029)</p>
-            </div>
-            <div>Currently Studying
-                <ul>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                    <li>MySQL</li>
-                </ul>
-            </div>
-    </section>
-    <section class="skills">
-        <h1>Skills</h1>
-            <i class="devicon-python-plain"></i>
-            <i class="devicon-fastapi-plain"></i>
-            <i class="devicon-html5-plain"></i>
-            <i class="devicon-css3-plain"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-git-plain"></i>
-            <i class="devicon-github-original"></i>
-    </section>
+        </section>
 
-    <section class="contact">
-        <h1>Contact</h1>
-        <p>Feel free to reach out to me in any of the following ways:</p>
-        <ul>
-            <li><ion-icon name="mail-outline"></ion-icon>Email: mateusgubert0@gmail.com</li>
-            <li><ion-icon name="logo-linkedin"></ion-icon>LinkedIn: <a href="https://www.linkedin.com/in/mateus-gubert-lirmann-8341133b6" target="_blank">LinkedIn Profile</a></li>
-            <li><ion-icon name="logo-github"></ion-icon>GitHub: <a href="https://github.com/Mati-Limas" target="_blank">GitHub Profile</a></li>
-        </ul>
-    </section>
+        <section class="projects">
+            <h2>Main Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="img/api_bank.png" alt="API Bank main page" class="project-img">
+                    <div class="project-content">
+                        <h3>API Bank</h3>
+                        <p>A REST API for managing simple bank operations, built with FastAPI and SQLAlchemy</p>
+                        <a href="https://github.com/Mati-Limas/API-Bank" target="_blank" class="btn-project">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/esp32.png" alt="GAS DETECTOR simulation page" class="project-img">
+                    <div class="project-content">
+                        <h3>GAS DETECTOR</h3>
+                        <p>A cyber-physical system for detecting flammable gas leaks using ESP32 and C++</p>
+                        <a href="https://github.com/Mati-Limas/GAS-DETECTOR" target="_blank" class="btn-project">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/hi_teach.jpeg" alt="Online Course Website main page" class="project-img">
+                    <div class="project-content">
+                        <h3>Online Course Website</h3>
+                        <p>A responsive website for an online course platform, built from scratch using knowledge of requirements gathering, database management
+                            and web development.
+                        </p>
+                        <a href="https://github.com/Odudz/Projeto_Hi-Teach_Underdog" target="_blank" class="btn-project">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+        <section class="about">
+            <h2>Education and Studies</h2>
+                <div><h3>Education</h3>
+                    <p>PUCPR - Software Engineering Undergraduation (2026-2029)</p>
+                </div>
+                <div><h3>Currently Studying</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+                <i class="devicon-python-plain"></i>
+                <i class="devicon-fastapi-plain"></i>
+                <i class="devicon-html5-plain"></i>
+                <i class="devicon-css3-plain"></i>
+                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-git-plain"></i>
+                <i class="devicon-github-original"></i>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me in any of the following ways:</p>
+            <ul>
+                <li><ion-icon name="mail-outline"></ion-icon>Email: <a href="mailto:mateusgubert0@gmail.com">mateusgubert0@gmail.com</a></li>
+                <li><ion-icon name="logo-linkedin"></ion-icon>LinkedIn: <a href="https://www.linkedin.com/in/mateus-gubert-lirmann-8341133b6" target="_blank">LinkedIn Profile</a></li>
+                <li><ion-icon name="logo-github"></ion-icon>GitHub: <a href="https://github.com/Mati-Limas" target="_blank">GitHub Profile</a></li>
+            </ul>
+        </section>
+    </main>
 
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
