@@ -15,11 +15,60 @@
 
 body {
     background-color: var(--background-color);
+    padding-top: 80px;
+}
+
+/* header section */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgb(from var(--background-color) r g b / 0.75);
+    color: var(--title-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.header-logo h1 {
+    font-size: var(--font-xl);
+    margin: 0;
+}
+
+.header-logo p {
+    font-size: var(--font-sm);
+    color: var(--txt-color);
+    margin: 0;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav a {
+    color: var(--title-color);
+    text-decoration: none;
+    font-size: var(--font-base);
+}
+
+.header-nav a:hover {
+    filter: brightness(0.8);
 }
 
 /* projects section */
 
-.projects h2 {
+.projects-section h2 {
     text-align: center;
     color: var(--title-color);
     font-size: var(--font-xxl);
@@ -100,7 +149,7 @@ body {
     transform: translateY(-2px);
 }
 
-.btn-all-project {
+#btn-all-project {
     display: inline-block;
     background-color: var(--btn-color);
     color: var(--title-color);
@@ -115,11 +164,11 @@ body {
     transition: background-color 0.2s ease, transform 0.2s ease
 }
 
-.btn-all-project:hover {
+#btn-all-project:hover {
     filter: brightness(0.9);
     transform: translateY(-2px);
 }
 
-.btn-project i, .btn-all-project i {
+.btn-project i, #btn-all-project i {
     font-size: var(--font-lg);
 }
