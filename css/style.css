@@ -99,3 +99,27 @@ body {
     filter: brightness(0.9);
     transform: translateY(-2px);
 }
+
+.btn-all-project {
+    display: inline-block;
+    background-color: var(--btn-color);
+    color: var(--title-color);
+    text-decoration: none;
+    padding: 20px 40px;
+    font-size: var(--font-lg);
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto 0 auto;
+    width: fit-content;
+    transition: background-color 0.2s ease, transform 0.2s ease
+}
+
+.btn-all-project:hover {
+    filter: brightness(0.9);
+    transform: translateY(-2px);
+}
+
+.btn-project i, .btn-all-project i {
+    font-size: var(--font-lg);
+}
