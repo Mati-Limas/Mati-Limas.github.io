@@ -1,13 +1,29 @@
 :root {
-    --background-color: #EDEBD7;
-    --btn-color: #E3B23C;
-    --txt-color: #423E37;
-    --secondary-txt-color: #6E675F;
-    --decorative-color: #A39594
+    /* color palette */
+    --background-color: #353535;
+    --btn-color: #3c6e71;
+    --title-color: #ffffff;
+    --txt-color: #d9d9d9;
+    --decorative-color: #284b63;
+    /* font sizes */
+    --font-sm: 0.8rem;
+    --font-base: 1rem;
+    --font-lg: 1.2rem;
+    --font-xl: 1.44rem;
+    --font-xxl: 1.73rem
 }
 
+body {
+    background-color: var(--background-color);
+}
 
 /* projects section */
+
+.projects h2 {
+    text-align: center;
+    color: var(--title-color);
+    font-size: var(--font-xxl);
+}
 .project-container {
     display: flex;
     gap: 24px;
@@ -17,8 +33,8 @@
 }
 
 .project-card {
-    background-color: var(--background-color); 
-    border: 1px solid var(--decorative-color); 
+    background-color: var(--txt-color); 
+    border: 1px solid var(--btn-color); 
     border-radius: 12px;
     width: 320px; 
     overflow: hidden; 
@@ -26,6 +42,7 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .project-card:hover {
@@ -40,7 +57,7 @@
     flex-shrink: 0;
     object-fit: cover;
     object-position: center;
-    border-bottom: 1px solid var(--decorative-color);
+    border-bottom: 1px solid var(--btn-color);
 }
 
 .project-content {
@@ -52,22 +69,22 @@
 
 .project-content h3 {
     margin: 0 0 10px 0;
-    color: var(--txt-color);
-    font-size: 1.4rem;
+    color: var(--background-color);
+    font-size: var(--font-xl);
     font-weight: 700;
 }
 
 .project-content p {
     margin: 0 0 20px 0;
-    color: var(--secondary-txt-color);
-    font-size: 0.95rem;
+    color: var(--background-color);
+    font-size: var(--font-base);
     line-height: 1.5;
 }
 
 .btn-project {
     display: inline-block;
     background-color: var(--btn-color);
-    color: var(--txt-color);
+    color: var(--title-color);
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 6px;
