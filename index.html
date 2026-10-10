@@ -9,22 +9,33 @@
 </head>
 <body>
     <header>
-        <div class="header-left">
+        <div class="header-logo">
             <h1>Mateus Lirmann</h1>
-        </div>
-        <div class="header-right">
             <p class="role">Software Engineering Student</p>
-            <p class="description">Hello! My name is Mateus, although I am usually known as Limas. I am a Software Engineering 
-                student with a strong interest in becoming a full-stack developer in the future.
-                Beyond programming, I am also developing my skills in digital art, which allows me to explore my 
-                creativity and strengthen another area of my interests.
-            </p>  
-        </div>      
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <section class="welcome">
+        <div class="avatar-welcome">
+            <img src="img/profile_pic.jpeg" alt="Profile Picture" class="avatar">
+        </div>
+
+        <h2 class="welcome-title">
+            Hi, I'm <span class="typed-txt"></span>
+        </h2>
+    </section>
     
     <main id="main-container">
        
-        <section class="projects">
+        <section id="projects" class="projects-section">
             <h2>Main Projects</h2>
             <div class="project-container">
                 <div class="project-card">
@@ -63,11 +74,11 @@
                     </div>
                 </div>
                 <a href="https://github.com/Mati-Limas?tab=repositories" target="_blank" rel="noopener noreferrer" 
-                    class="btn-all-project"><i class="devicon-github-original"></i>
+                    id="btn-all-project"><i class="devicon-github-original"></i>
                     View All Projects</a>
             </div>
         </section>
-        <section class="skills">
+        <section id="skills" class="skills-section">
             <h2>Skills</h2>
                 <ul>
                     <li><i class="devicon-python-plain" role="img" aria-label="Python"></i></li>
@@ -80,8 +91,13 @@
                     <li><i class="devicon-vscode-plain" role="img" aria-label="VS Code"></i></li>
                 </ul>
         </section>
-        <section class="about">
+        <section id="about"class="about-section">
             <h2>Education and Studies</h2>
+                <p class="description">Hello! My name is Mateus, although I am usually known as Limas. I am a Software Engineering 
+                student with a strong interest in becoming a full-stack developer in the future.
+                Beyond programming, I am also developing my skills in digital art, which allows me to explore my 
+                creativity and strengthen another area of my interests.
+                </p>
                 <div class="education-info">
                     <h3>Education</h3>
                     <p>PUCPR - Software Engineering Undergraduate (2026-2029)</p>
@@ -95,7 +111,7 @@
                 </div>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact-section">
             <h2>Contact</h2>
             <p>Feel free to reach out to me in any of the following ways:</p>
             <ul>
@@ -108,5 +124,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.12"></script>
+    <script src="js/typed_txt.js"></script>
 </body>
 </html>
