@@ -16,6 +16,17 @@
     --font-massive: 4.34rem;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 body {
     background-color: var(--background-color);
     padding-top: 80px;
