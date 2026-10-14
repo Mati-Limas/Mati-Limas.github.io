@@ -221,6 +221,9 @@ header {
     transform: translateY(-2px);
 }
 
+#btn-all-section {
+    text-align: center;
+}
 #btn-all-project {
     display: inline-block;
     background-color: var(--btn-color);
