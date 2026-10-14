@@ -29,7 +29,7 @@ html {
 
 body {
     background-color: var(--background-color);
-    padding-top: 80px;
+    margin: 0;
     color: var(--title-color)
 }
 
@@ -43,7 +43,7 @@ header {
     background-color: rgba(53,53,53,0.75); /* for older browser */
     background-color: rgb(from var(--background-color) r g b / 0.75);
     color: var(--title-color);
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -53,6 +53,13 @@ header {
     -webkit-backdrop-filter: blur(10px);
 }
 
+@media (max-width: 600px) {
+    header {
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
 .header-logo h1 {
     font-size: var(--font-xl);
     margin: 0;
@@ -112,7 +119,7 @@ header {
 }
 
 .welcome-title {
-    font-size: var(--font-massive);
+    font-size: clamp(var(--font-xxxl), 8vw, var(--font-massive));
     font-weight: bold;
 }
 
@@ -149,7 +156,8 @@ header {
     background-color: var(--txt-color); 
     border: 1px solid var(--btn-color); 
     border-radius: 12px;
-    width: 320px; 
+    width: 100%; 
+    max-width: 320px;
     overflow: hidden; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
     display: flex;
@@ -213,6 +221,9 @@ header {
     transform: translateY(-2px);
 }
 
+#btn-all-section {
+    text-align: center;
+}
 #btn-all-project {
     display: inline-block;
     background-color: var(--btn-color);
