@@ -111,10 +111,10 @@
         <section id="about" class="about-section">
             <h2>About Me</h2>
             <div class="about-container">
-                <div class="about-card">
-                    <img src="#" alt="picture of myself">
+                <div class="about-img-container">
+                    <img id='img-about' src="img/Eu.jpeg" alt="picture of myself">
                 </div>
-                <div class="about-card">
+                <div class="about-text-container">
                     <p class="description">Hello! My name is Mateus, although I am usually known as Limas. 
                         I am a Software Engineering student with a strong interest in becoming a 
                         full-stack developer in the future. Beyond programming, I am also developing 
@@ -125,8 +125,13 @@
                 </div>
             </div>
             <div class="education-container">
-                <div class="education-info">
-                    <p>PUCPR - Software Engineering Undergraduate (2026-2029)</p>
+                <div class="education-card">
+                    <div class="education-title">
+                        <ion-icon name="school-outline" id="education-icon"></ion-icon>
+                    </div>
+                    <p>PUCPR - Software Engineering Undergraduate 
+                        (2026-2029)
+                    </p>
                 </div>
             </div>
         </section>
@@ -141,6 +146,10 @@
             </ul>
         </section>
     </main>
+
+    <footer>
+        <h3>© 2026 Mateus Gubert Lirmann. All rights reserved</h3>
+    </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
