@@ -55,42 +55,6 @@ header {
     -webkit-backdrop-filter: blur(10px);
 }
 
-@media (max-width: 600px) {
-    header {
-        padding: 10px 20px;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-}
-.header-logo h1 {
-    font-size: var(--font-xl);
-    margin: 0;
-}
-
-.header-logo p {
-    font-size: var(--font-sm);
-    color: var(--txt-color);
-    margin: 0;
-}
-
-.header-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.header-nav a {
-    color: var(--title-color);
-    text-decoration: none;
-    font-size: var(--font-base);
-}
-
-.header-nav a:hover {
-    filter: brightness(0.8);
-}
-
 /* welcome section */
 
 .welcome {
@@ -343,29 +307,6 @@ header {
     color: var(--bright-blue);
 }
 
-@media (max-width: 480px) {
-    .skills-section {
-        padding: 50px 15px;
-    }
-    
-    .skill-grid {
-        grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
-        gap: 12px;
-    }
-
-    .skill-card {
-        padding: 10px 12px;
-    }
-
-    .skill-card i {
-        font-size: 1.6rem;
-    }
-
-    .skill-card span {
-        font-size: 0.9rem;
-    }
-}
-
 /* about section */
 
 .about-section {
@@ -471,27 +412,6 @@ header {
     font-size: var(--font-lg);
 }
 
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-img-container {
-        max-width: 260px;
-        width: 100%;
-    }
-
-    .about-text-container {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .education-card {
-        max-width: 100%;
-    }
-}
-
 /* contact section */
 
 .contact-section {
@@ -562,4 +482,86 @@ footer h3 {
     text-align: center;
     color: var(--txt-color);
     font-size: var(--font-base);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img-container {
+        max-width: 260px;
+        width: 100%;
+    }
+
+    .about-text-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .education-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+.header-logo h1 {
+    font-size: var(--font-xl);
+    margin: 0;
+}
+
+.header-logo p {
+    font-size: var(--font-sm);
+    color: var(--txt-color);
+    margin: 0;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav a {
+    color: var(--title-color);
+    text-decoration: none;
+    font-size: var(--font-base);
+}
+
+.header-nav a:hover {
+    filter: brightness(0.8);
+}
+
+@media (max-width: 480px) {
+    .skills-section {
+        padding: 50px 15px;
+    }
+    
+    .skill-grid {
+        grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+        gap: 12px;
+    }
+
+    .skill-card {
+        padding: 10px 12px;
+    }
+
+    .skill-card i {
+        font-size: 1.6rem;
+    }
+
+    .skill-card span {
+        font-size: 0.9rem;
+    }
 }
